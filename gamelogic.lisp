@@ -153,8 +153,9 @@
       (setf *max-hold* 1)))
 
 (defun game-over (pressed-keys)
-  (draw-text "Game over! press x to exit" 150 350 (get-color red))
-  (draw-text "or press r to restart" 190 380 (get-color red))
+  (draw-text "Game over!" 260 350 (get-color red))
+  (draw-text "Press x to exit" 190 380 (get-color red))
+  (draw-text "press r to restart" 190 410 (get-color red))
   (when (member :sdl-key-x pressed-keys)
     (sdl:push-quit-event))
   (when (member :sdl-key-r pressed-keys)
