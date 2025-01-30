@@ -94,10 +94,10 @@ x\y: cordinates to draw on"
 	       ;; Redraw the display
 	       (sdl:update-display))))))
 
-
+#|
 (defun create-exe (&key (name "space-invaders") (console nil))
   "Easy compilation for CCL"
   (setf *assets-path* "assets/")
   (let ((mode (if console :console :gui)))
     (ccl:save-application (concatenate 'string (namestring (asdf:system-relative-pathname :spaceinvaders "")) name ".exe")
-			  :application-type #-deploy-console mode :toplevel-function #'main :prepend-kernel t )))
+			  :application-type #-deploy-console mode :toplevel-function #'main :prepend-kernel t )))|#
