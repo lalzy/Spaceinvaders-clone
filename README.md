@@ -11,5 +11,6 @@ Get the SDL1.2 library files (.dll for windows, .so for linux), may have to comp
 Get [Quicklisp](https://www.quicklisp.org/beta/)
 
 (ql:quickload :spaceinvaders)
+
 (spaceinvaders:main)
 
